@@ -16,7 +16,7 @@
 
 package com.consol.citrus.remote.job;
 
-import org.citrusframework.main.TestRunConfiguration;
+import com.consol.citrus.main.TestRunConfiguration;
 import com.consol.citrus.remote.model.RemoteResult;
 
 import java.util.List;

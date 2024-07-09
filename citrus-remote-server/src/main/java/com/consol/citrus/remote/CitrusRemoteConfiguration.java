@@ -16,7 +16,7 @@
 
 package com.consol.citrus.remote;
 
-import org.citrusframework.main.CitrusAppConfiguration;
+import com.consol.citrus.main.CitrusAppConfiguration;
 
 /**
  * @author Christoph Deppisch
@@ -52,7 +52,7 @@ public class CitrusRemoteConfiguration extends CitrusAppConfiguration {
     public void apply(CitrusAppConfiguration configuration) {
         setEngine(configuration.getEngine());
         setPackages(configuration.getPackages());
-        setTestSources(configuration.getTestSources());
+        setTestClasses(configuration.getTestClasses());
         setIncludes(configuration.getIncludes());
         addDefaultProperties(configuration.getDefaultProperties());
     }
