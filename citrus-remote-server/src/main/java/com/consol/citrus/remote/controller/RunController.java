@@ -22,9 +22,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
-import com.consol.citrus.TestClass;
-import com.consol.citrus.main.CitrusApp;
-import com.consol.citrus.main.CitrusAppConfiguration;
+import org.citrusframework.TestSource;
+import org.citrusframework.main.CitrusApp;
+import org.citrusframework.main.CitrusAppConfiguration;
 import com.consol.citrus.remote.CitrusRemoteConfiguration;
 
 /**
@@ -79,11 +79,11 @@ public class RunController {
      * Run Citrus application with given test class names.
      * @param testClasses
      */
-    public void runClasses(List<TestClass> testClasses) {
+    public void runClasses(List<TestSource> testClasses) {
         CitrusAppConfiguration citrusAppConfiguration = new CitrusAppConfiguration();
 
         citrusAppConfiguration.setEngine(engine);
-        citrusAppConfiguration.setTestClasses(testClasses);
+        citrusAppConfiguration.setTestSources(testClasses);
         citrusAppConfiguration.setConfigClass(configuration.getConfigClass());
         citrusAppConfiguration.addDefaultProperties(configuration.getDefaultProperties());
         citrusAppConfiguration.addDefaultProperties(defaultProperties);

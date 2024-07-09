@@ -16,8 +16,8 @@
 
 package com.consol.citrus.remote.model;
 
-import com.consol.citrus.TestResult;
-import com.consol.citrus.exceptions.CitrusRuntimeException;
+import org.citrusframework.TestResult;
+import org.citrusframework.exceptions.CitrusRuntimeException;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
